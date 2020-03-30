@@ -105,5 +105,5 @@ ment to support the cover type. In addition, certain tree cover will be better s
 ## Author
 Kevin McPherson, Flatiron School
 
-$$ Acknowledgements
+## Acknowledgements
 I would like to thank Abhineet Kulkarni for his guidance, and my cohort for their support
