@@ -35,6 +35,13 @@ Descriptions for all the features in the dataset are as follows:
 11. Wilderness_Area (4 binary columns, 0 = absence or 1 = presence) - Wilderness area designation
 12. Soil_Type (40 binary columns, 0 = absence or 1 = presence) - Soil Type designation
 13. Cover_Type (7 types, integers 1 to 7) - Forest Cover Type designation
+      -Spruce/Fir
+      -Lodgepole Pine
+      -Ponderosa Pine
+      -Cottonwood/Willow
+      -Aspen
+      -Douglas-fir
+      -Krummholz
 
 The wilderness areas are:
 
