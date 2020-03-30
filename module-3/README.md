@@ -86,6 +86,9 @@ The soil types are:
 39. Moran family - Cryorthents - Leighcan family complex, extremely stony.
 40. Moran family - Cryorthents - Rock land complex, extremely stony.
 
+## Prerequisites
+`
+
 ## Conclusions
 
 During my project, I found that the three most important factors to determining cover type, when we classify with a Random Forest
@@ -93,3 +96,14 @@ Classifier are: 1) Elevation, 2) Distance to Roadways, and 3) Distance to fire p
 will ultimately determine the soil type that develops there and the other flora and fauna that can flourish in and around the environ-
 ment to support the cover type. In addition, certain tree cover will be better suited to survive near roadways and at certain elevations.
 
+## Future Directions 
+- **Class imbalance**: One of the biggest features of this dataset is class imbalance. Specifically, the classes of the target variable `Cover_Type` that are over-represented in the data are cover types 1 and 2, or Spruce/Fir and Lodgepole Pine are the most common target classes in this dataset. Working on some way of reducing the disparity, either by doing a _cost sensitive classifier_ if there's no way of resampling the data, or using some sort of synthetic sampling technique like SMOTE might help.
+- **Applying SVM**: Although it appears that Random Forest is a great way to predict what cover type exists, it would be interesting to see how a "one vs one" or even a "one vs all" multi-clas classifier would work in this situation. Thus, applying SVM would be an interesting way of bringing in new classification technology to the project.
+- **Feature Engineering**: most of the data contains "vertical" or "horizontal distances to certain points, but we know from experience that the Earth lies on certain curvatures that don't make just pure vertical and horizontal distances accurate. Therefore, going back and making Euclidian distances of each feature would be useful. 
+- **Protecting against possible overfitting**: I have a high suspicion that my current model is overfit. Performing cross-validation is highly desirable.
+
+## Author
+Kevin McPherson, Flatiron School
+
+$$ Acknowledgements
+I would like to thank Abhineet Kulkarni for his guidance, and my cohort for their support
