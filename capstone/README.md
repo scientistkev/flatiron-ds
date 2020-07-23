@@ -21,7 +21,9 @@ a prime location for not only distribution centers but the freight car industry.
 The project consists of three different levels or directories:
 
 1. The API
-This is where the API, which is tested locally and deployed on a staging cluster
+This is where the API, which is tested locally via FastAPI and deployed on a staging cluster via Cortex, is stored. It is part of a larger repo that is maintained at my current job (Bellwethr), which is private and only viewable to me and the rest of the team. During my presentation, I intend to take whoever is interested through this private repo, and it is added as a submodule here. 
+
+    - The API also formalizes a process for the team to deploy a larger MLOps strategy. 
 
 2. The Notebooks
 This is where I conducted all my experiments and constructed a baseline model
