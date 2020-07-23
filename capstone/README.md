@@ -16,6 +16,18 @@ a prime location for not only distribution centers but the freight car industry.
 * In the project, you may see some acronyms like sd (SuperDispatch) to signify various variables and file assignments
 * The data will be hidden from plain view and added to a .gitignore folder as it is proprietary and I did not previously go through the correct channels to have it shown on this repository
 
-## Materials (i.e., Libraries and Technologies) and Methods Used
+## Project Outline
+
+The project consists of three different levels or directories:
+
+1. The API
+This is where the API, which is tested locally and deployed on a staging cluster
+
+2. The Notebooks
+This is where I conducted all my experiments and constructed a baseline model
+
+3. 
+
+Materials (i.e., Libraries and Technologies) and Methods Used
 
 The following methods and materials were used in this project, including a brief list of the 
