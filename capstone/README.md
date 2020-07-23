@@ -23,13 +23,16 @@ The project consists of three different levels or directories:
 1. The API
 This is where the API, which is tested locally via FastAPI and deployed on a staging cluster via Cortex, is stored. It is part of a larger repo that is maintained at my current job (Bellwethr), which is private and only viewable to me and the rest of the team. During my presentation, I intend to take whoever is interested through this private repo, and it is added as a submodule here. 
 
-    - The API also formalizes a process for the team to deploy a larger MLOps strategy. 
+    - The API also formalizes a process for the team to deploy a larger MLOps strategy. It utilizes the `poetry` installation module as well as writes a variety of config files that interact
+    with AWS S3 resources that store the model and toml files that orchestrate various environment variables that work in symphony. More on this another time. 
+
+The idea for the API is simple: the client (a small startup called SuperDispatch) wants to use this API to quickly estimate transportation costs for customers who use their CarrierTMS or ShipperTMS software.The CarrierTMS software gives freight companies the opportunity to price out their various shipping needs while the ShipperTMS software allows merchandise owners (car dealerships, independent owners) the ability to estimate logistics costs. Currently, according to another company called Backlot Cars, this process is time-consuming and overly engineered, running through 4 different teams and spreading geographically, making pricing options costly, temporally long, and just plain headache-y. 
 
 2. The Notebooks
-This is where I conducted all my experiments and constructed a baseline model
+This is where I conducted all my experiments and constructed a baseline model. In theory, data science should be conducted as not knowing the 
 
 3. 
 
-Materials (i.e., Libraries and Technologies) and Methods Used
+## Materials (i.e., Libraries and Technologies) and Methods Used
 
 The following methods and materials were used in this project, including a brief list of the 
