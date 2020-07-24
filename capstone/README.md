@@ -38,4 +38,61 @@ This is where all the images output from the notebook are maintained. Some have 
 
 ## Materials (i.e., Libraries and Technologies) and Methods Used
 
-The following methods and materials were used in this project, including a brief list of the 
+The following methods and materials were used in this project, including a brief list of the dependencies for the notebook, specifically.
+
+- For *the data science* I used the *OSEMN Method* and it is outlined in the notebook accordingly
+- For the *machine learning* I used the `sklearn` library and specifically the `RandomForestRegressor`, `LinearRegression`, and `RidgeRegressor` submodules
+- The dependencies for these two sections are:
+    import pandas as pd # For data manipulation
+    import numpy as np # For statistics, file compression
+    import missingno as msno # For visualization of data completeness
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    from geopy import distance
+    from sklearn.preprocessing import StandardScaler
+    from sklearn.cluster import KMeans
+    from sklearn.manifold import TSNE
+    from sklearn.metrics import silhouette_score
+    from yellowbrick.cluster import KElbowVisualizer
+    from sklearn.model_selection import cross_val_score, GridSearchCV
+    from sklearn.ensemble import RandomForestRegressor
+    from sklearn.preprocessing import MinMaxScaler
+    from sklearn.model_selection import train_test_split
+    from sklearn.metrics import mean_absolute_error
+    from sklearn.metrics import mean_squared_error
+    import scipy.stats as stats
+    from sklearn.preprocessing import LabelEncoder
+    from sklearn.linear_model import LinearRegression
+    from sklearn.linear_model import Ridge
+    from sklearn.metrics import mean_squared_error
+    import pickle
+- For the *MLOps and productionization of the model* I used [FastAPI](https://fastapi.tiangolo.com/) for local deployment to test originally. I then switched to [Cortex](cortex.dev). Cortex utilizes AWS, so I have made various config files and `.env` files that hold my company's credentials to sign on to AWS and access things like S3.
+- The dependencies for the API are:
+    boto3==1.14.20
+    botocore==1.17.20
+    click==7.1.2
+    dataclasses==0.6; python_version < "3.7"
+    docutils==0.15.2
+    fastapi==0.59.0
+    geographiclib==1.50
+    geopy==2.0.0
+    h11==0.9.0
+    httptools==0.1.1; sys_platform != "win32" and sys_platform != "cygwin" and platform_python_implementation != "PyPy" 
+    jmespath==0.10.0
+    joblib==0.16.0
+    numpy==1.19.0 
+    pandas==1.0.5
+    pydantic==1.6
+    python-dateutil==2.8.1
+    python-dotenv==0.14.0
+    pytz==2020.1
+    s3transfer==0.3.3
+    scikit-learn==0.23.1
+    scipy==1.5.1
+    six==1.15.0
+    starlette==0.13.4
+    threadpoolctl==2.1.0
+    urllib3==1.25.9; python_version != "3.4"
+    uvicorn==0.11.5
+    uvloop==0.14.0; sys_platform != "win32" and sys_platform != "cygwin" and platform_python_implementation != "PyPy"
+    websockets==8.1
