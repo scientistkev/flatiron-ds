@@ -9,13 +9,17 @@
 
 Due to it's central location in the United States, Kansas City, Missouri is
 a prime location for not only distribution centers but the freight car industry. It is estimated that because of its location, 85 percent of the US population could be reached within two days of shipping and freight logistics. It is predicted that between 2016 and 2027, the shipping by truck industry will grow by 27 percent; that's growth from an already staggering $796.7 billion total revenue industry (Statista, 2018). As such, the industry demands a smarter solution to price trips before they happen, so that less operational costs can be spent on coordination of resources and more money can be put to the salaries of drivers and truck maintenance. Thus, in this capstone project, I will introduce a machine learning model that predicts shipping prices on a smaller attainable market: that of the $12 billion per year vehicle shipping services. My goal is to present both supervised (multiple linear regression), unsupervised (clustering), and ensemble (random forest regressor) learning models and deploy one of them to a requestable API used the FastAPI and Cortex technologies, which have been recently developed. 
+
 ---
+
 ## Some Notes Before We Proceed
 
 * This work was done simulataneously as a work project for my career at a small startup in Kansas City called Bellwethr for another small startup in  the freight space called SuperDispatch. 
 * In the project, you may see some acronyms like sd (SuperDispatch) to signify various variables and file assignments
 * The data will be hidden from plain view and added to a .gitignore folder as it is proprietary and I did not previously go through the correct channels to have it shown on this repository
+
 ---
+
 ## Project Outline (What's Here)
 
 The project consists of three different levels or directories:
@@ -35,7 +39,9 @@ This is where I decided to keep the various things saved from the notebook. In t
 
 **4. The Images** <br>
 This is where all the images output from the notebook are maintained. Some have code outputs like `distplot.savefig('image.png)` and others were screenshot and added to the directory.
+
 ---
+
 ## Materials (i.e., Libraries and Technologies) and Methods Used
 
 The following methods and materials were used in this project, including a brief list of the dependencies for the notebook, specifically.
@@ -46,29 +52,29 @@ The following methods and materials were used in this project, including a brief
 
 - The dependencies for these two sections are:
 <code>
-    import pandas as pd # For data manipulation
-    import numpy as np # For statistics, file compression
-    import missingno as msno # For visualization of data completeness
-    import matplotlib.pyplot as plt
-    import seaborn as sns
-    from geopy import distance
-    from sklearn.preprocessing import StandardScaler
-    from sklearn.cluster import KMeans
-    from sklearn.manifold import TSNE
-    from sklearn.metrics import silhouette_score
-    from yellowbrick.cluster import KElbowVisualizer
-    from sklearn.model_selection import cross_val_score, GridSearchCV
-    from sklearn.ensemble import RandomForestRegressor
-    from sklearn.preprocessing import MinMaxScaler
-    from sklearn.model_selection import train_test_split
-    from sklearn.metrics import mean_absolute_error
-    from sklearn.metrics import mean_squared_error
-    import scipy.stats as stats
-    from sklearn.preprocessing import LabelEncoder
-    from sklearn.linear_model import LinearRegression
-    from sklearn.linear_model import Ridge
-    from sklearn.metrics import mean_squared_error
-    import pickle
+    import pandas as pd # For data manipulation <br>
+    import numpy as np # For statistics, file compression <br>
+    import missingno as msno # For visualization of data completeness <br>
+    import matplotlib.pyplot as plt <br>
+    import seaborn as sns <br>
+    from geopy import distance <br>
+    from sklearn.preprocessing import StandardScaler <br>
+    from sklearn.cluster import KMeans <br>
+    from sklearn.manifold import TSNE <br>
+    from sklearn.metrics import silhouette_score <br>
+    from yellowbrick.cluster import KElbowVisualizer <br>
+    from sklearn.model_selection import cross_val_score, GridSearchCV <br>
+    from sklearn.ensemble import RandomForestRegressor <br>
+    from sklearn.preprocessing import MinMaxScaler <br>
+    from sklearn.model_selection import train_test_split <br>
+    from sklearn.metrics import mean_absolute_error <br>
+    from sklearn.metrics import mean_squared_error <br>
+    import scipy.stats as stats <br>
+    from sklearn.preprocessing import LabelEncoder <br>
+    from sklearn.linear_model import LinearRegression <br>
+    from sklearn.linear_model import Ridge <br>
+    from sklearn.metrics import mean_squared_error <br>
+    import pickle <br>
 </code>
 
 - For the *MLOps and productionization of the model* I used [FastAPI](https://fastapi.tiangolo.com/) for local deployment to test originally. I then switched to [Cortex](cortex.dev). Cortex utilizes AWS, so I have made various config files and `.env` files that hold my company's credentials to sign on to AWS and access things like S3.
