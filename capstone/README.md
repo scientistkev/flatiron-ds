@@ -115,7 +115,7 @@ The following methods and materials were used in this project, including a brief
 
 ### Data Exploration and Some Visualizations
 
-![log price vs log distance](images/lprice_v_ldist.png)
+![log price vs log distance](images/lprice_v_ldist.png) ![box plot](images/top_ships_dist.png)
 
 **Various conclusions were reached while exploring the data, including:**
 
@@ -127,9 +127,7 @@ The following methods and materials were used in this project, including a brief
 - More pickups happen in the 35-40 latitude area in the `not top shipped group` as compared to the `top shipped group` of vehicles
 - More deliveries happen in the 37.5-40 latitude area in the `not top shipped group` as compared to the `top shipped group` of vehicles
 
-![pickup latitude](images/pickup_latitude.png)
-
-![delivery latitude](images/delivery_latitude.png)
+![pickup latitude](images/pickup_latitude.png) ![delivery latitude](images/delivery_latitude.png)
 
 For more visualizations, please see the `notebook` directory
 
