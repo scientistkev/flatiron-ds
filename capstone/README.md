@@ -35,7 +35,7 @@ This is where the API, which is tested locally via FastAPI and deployed on a sta
 This is where I conducted all my experiments and constructed a baseline model. In theory, data science should be conducted as not knowing the inputs; however, due the requests of SuperDispatch, these were pre-determined. 
 
 **3. The Data** <br>
-This is where I decided to keep the various things saved from the notebook. In this case, the classes that were encoded by `LabelEncoder` are kept here. In the future, this is where the model that is pickled, `model.pkl` will be stored.
+This is where I decided to keep the various things saved from the notebook. In this case, the classes that were encoded by `LabelEncoder` are kept here. In the future, this is where the model that is pickled, `model.pkl` will be stored. The data provided by SuperDispatch will not be present here because it is proprietary.
 
 **4. The Images** <br>
 This is where all the images output from the notebook are maintained. Some have code outputs like `distplot.savefig('image.png)` and others were screenshot and added to the directory.
@@ -108,3 +108,22 @@ The following methods and materials were used in this project, including a brief
     > uvicorn==0.11.5 <br>
     > uvloop==0.14.0; sys_platform != "win32" and sys_platform != "cygwin" and platform_python_implementation != "PyPy" <br>
     > websockets==8.1 <br>
+
+    ---
+
+    ## Results of the Project
+
+    # Data Exploration
+
+    ![log price vs log distance](images/lprice_v_ldist.png)
+
+    **Various conclusions were reached while exploring the data, including:**
+
+    - The high density of price range is from 4.4816890703380645 to 148.4131591025766 dollars
+    - The high density distance range is from 13.463738035001692 to 403.4287934927351 miles
+    - The mean distance of vehicles not in the top five of shipped vehicle types is 281.31058244911173 miles
+    - The mean distance of vehicles not in the top five of shipped vehicle types is 198.11402065754618 miles
+        - These are statistically significantly different based on a t-test
+    - More pickups happen in the 35-40 latitude area in the `not top shipped group` as compared to the `top shipped group` of vehicles
+    - More deliveries happen in the 37.5-40 latitude area in the `not top shipped group` as compared to the `top shipped group` of vehicles
+
