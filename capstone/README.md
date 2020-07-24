@@ -181,6 +181,14 @@ And on and on...
 
 ## Conclusions and Business Recommendations
 
+From our preceding work, we have found that the pre-selection of features really constrains our modeling. However, we were able to find some very interesting business-related conclusions from the data. They are as follows:
+
+1. The list of top 5 most shipped vehicle types is 'sedan', 'suv', '4_door_pickup', 'other', and 'van'. These vehicles are shipped in a range less than all other vehicles. This is almost 100 miles less on average than other vehicles, and it is statistically significant after a student's t-test. Therefore, Kansas City companies should focus their markets on these vehicle types on on trips centering around 200 miles as the mean. 
+2. Going back to the the top shipped vehicles, most are picked up or dropped off in the 35-40th parallel (on average), thus Kansas City shipping companies can also augment their markets to look for vehicles shipped to and from Kansas and Nebraska. 
+3. The RF Regressor model is currently the best model to put into production to figure out trip price for all vehicle types, but there is worry that it might be underfit.
+
+The future of this work includes the following bullet points:
+- Work towards a better model to put into production on the API. Previously I have tried to do clustering on the types of trips that may exist in the data, but with no luck, so I will look at other ensemble models to test. One that seems particularly interesting, if I can get the computer power to work is [mlxtend's StackingRegressor](https://rasbt.github.io/mlxtend/user_guide/regressor/StackingRegressor/).
 
 
 
