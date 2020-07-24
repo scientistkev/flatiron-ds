@@ -51,6 +51,7 @@ The following methods and materials were used in this project, including a brief
 - For the *machine learning* I used the `sklearn` library and specifically the `RandomForestRegressor`, `LinearRegression`, and `RidgeRegressor` submodules
 
 - The dependencies for these two sections are:
+   
     <code>import pandas as pd # For data manipulation <br>
     import numpy as np # For statistics, file compression <br>
     import missingno as msno # For visualization of data completeness <br>
