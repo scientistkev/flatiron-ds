@@ -52,7 +52,8 @@ The following methods and materials were used in this project, including a brief
 
 - The dependencies for these two sections are:
    
-    <code>import pandas as pd # For data manipulation <br>
+    ----
+    import pandas as pd # For data manipulation <br>
     import numpy as np # For statistics, file compression <br>
     import missingno as msno # For visualization of data completeness <br>
     import matplotlib.pyplot as plt <br>
@@ -74,7 +75,8 @@ The following methods and materials were used in this project, including a brief
     from sklearn.linear_model import LinearRegression <br>
     from sklearn.linear_model import Ridge <br>
     from sklearn.metrics import mean_squared_error <br>
-    import pickle <br></code>
+    import pickle <br>
+    ----
 
 - For the *MLOps and productionization of the model* I used [FastAPI](https://fastapi.tiangolo.com/) for local deployment to test originally. I then switched to [Cortex](cortex.dev). Cortex utilizes AWS, so I have made various config files and `.env` files that hold my company's credentials to sign on to AWS and access things like S3.
 
