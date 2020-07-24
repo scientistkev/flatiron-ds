@@ -16,7 +16,7 @@ a prime location for not only distribution centers but the freight car industry.
 * In the project, you may see some acronyms like sd (SuperDispatch) to signify various variables and file assignments
 * The data will be hidden from plain view and added to a .gitignore folder as it is proprietary and I did not previously go through the correct channels to have it shown on this repository
 
-## Project Outline
+## Project Outline (What's Here)
 
 The project consists of three different levels or directories:
 
@@ -26,12 +26,15 @@ This is where the API, which is tested locally via FastAPI and deployed on a sta
     - The API also formalizes a process for the team to deploy a larger MLOps strategy. It utilizes the `poetry` installation module as well as writes a variety of config files that interact
     with AWS S3 resources that store the model and toml files that orchestrate various environment variables that work in symphony. More on this another time. 
 
-The idea for the API is simple: the client (a small startup called SuperDispatch) wants to use this API to quickly estimate transportation costs for customers who use their CarrierTMS or ShipperTMS software.The CarrierTMS software gives freight companies the opportunity to price out their various shipping needs while the ShipperTMS software allows merchandise owners (car dealerships, independent owners) the ability to estimate logistics costs. Currently, according to another company called Backlot Cars, this process is time-consuming and overly engineered, running through 4 different teams and spreading geographically, making pricing options costly, temporally long, and just plain headache-y. 
+    The idea for the API is simple: the client (a small startup called SuperDispatch) wants to use this API to quickly estimate transportation costs for customers who use their CarrierTMS or ShipperTMS software.The CarrierTMS software gives freight companies the opportunity to price out their various shipping needs while the ShipperTMS software allows merchandise owners (car dealerships, independent owners) the ability to estimate logistics costs. Currently, according to another company called Backlot Cars, this process is time-consuming and overly engineered, running through 4 different teams and spreading geographically, making pricing options costly, temporally long, and just plain headache-y. 
 
 2. The Notebooks <br>
 This is where I conducted all my experiments and constructed a baseline model. In theory, data science should be conducted as not knowing the 
 
-3. 
+3. The Data <br>
+
+4. The Images <br>
+This is where all the images output from the notebook are maintained. Some have code outputs like `distplot.savefig('image.png)` and others were screenshot and added to the directory.
 
 ## Materials (i.e., Libraries and Technologies) and Methods Used
 
