@@ -144,6 +144,38 @@ The rest of the repo is dedicated to the API. The API is built and accessed via 
 	"is_inoperable": true
 }
 ```
+The response should be as follows, with various permutations of `vehicle_type` and `is_inoperable`:
+
+```json
+{
+    "predictions": [
+        {
+            "vehicle_type": "suv",
+            "is_inoperable": true,
+            "prediction": 929.15
+        },
+        {
+            "vehicle_type": "suv",
+            "is_inoperable": false,
+            "prediction": 929.15
+        },
+        {
+            "vehicle_type": "sedan",
+            "is_inoperable": true,
+            "prediction": 929.15
+        },
+        {
+            "vehicle_type": "sedan",
+            "is_inoperable": false,
+            "prediction": 929.15
+        },
+        {
+            "vehicle_type": "4_door_pickup",
+            "is_inoperable": true,
+            "prediction": 929.15
+        }
+```
+And on and on...
 
 ---
 
