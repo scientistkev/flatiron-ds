@@ -28,9 +28,10 @@ This is where the API, which is tested locally via FastAPI and deployed on a sta
 - The idea for the API is simple: the client (a small startup called SuperDispatch) wants to use this API to quickly estimate transportation costs for customers who use their CarrierTMS or ShipperTMS software.The CarrierTMS software gives freight companies the opportunity to price out their various shipping needs while the ShipperTMS software allows merchandise owners (car dealerships, independent owners) the ability to estimate logistics costs. Currently, according to another company called Backlot Cars, this process is time-consuming and overly engineered, running through 4 different teams and spreading geographically, making pricing options costly, temporally long, and just plain headache-y. 
 
 **2. The Notebooks** <br>
-This is where I conducted all my experiments and constructed a baseline model. In theory, data science should be conducted as not knowing the 
+This is where I conducted all my experiments and constructed a baseline model. In theory, data science should be conducted as not knowing the inputs; however, due the requests of SuperDispatch, these were pre-determined. 
 
 **3. The Data** <br>
+This is where I decided to keep the various things saved from the notebook. In this case, the classes that were encoded by `LabelEncoder` are kept here. In the future, this is where the model that is pickled, `model.pkl` will be stored.
 
 **4. The Images** <br>
 This is where all the images output from the notebook are maintained. Some have code outputs like `distplot.savefig('image.png)` and others were screenshot and added to the directory.
