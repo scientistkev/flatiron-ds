@@ -52,11 +52,11 @@ The following methods and materials were used in this project, including a brief
 
 - The dependencies for these two sections are:
    
-    ----
-    import pandas as pd # For data manipulation <br>
-    import numpy as np # For statistics, file compression <br>
-    import missingno as msno # For visualization of data completeness <br>
-    import matplotlib.pyplot as plt <br>
+    
+    > import pandas as pd # For data manipulation <br>
+    > import numpy as np # For statistics, file compression <br>
+    > import missingno as msno # For visualization of data completeness <br>
+    > import matplotlib.pyplot as plt <br>
     import seaborn as sns <br>
     from geopy import distance <br>
     from sklearn.preprocessing import StandardScaler <br>
