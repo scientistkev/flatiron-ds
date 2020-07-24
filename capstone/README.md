@@ -111,19 +111,19 @@ The following methods and materials were used in this project, including a brief
 
     ---
 
-    ## Results of the Project
+## Results of the Project
 
-    # Data Exploration
+### Data Exploration
 
-    ![log price vs log distance](images/lprice_v_ldist.png)
+![log price vs log distance](images/lprice_v_ldist.png)
 
-    **Various conclusions were reached while exploring the data, including:**
+**Various conclusions were reached while exploring the data, including:**
 
-    - The high density of price range is from 4.4816890703380645 to 148.4131591025766 dollars
-    - The high density distance range is from 13.463738035001692 to 403.4287934927351 miles
-    - The mean distance of vehicles not in the top five of shipped vehicle types is 281.31058244911173 miles
-    - The mean distance of vehicles not in the top five of shipped vehicle types is 198.11402065754618 miles
-        - These are statistically significantly different based on a t-test
-    - More pickups happen in the 35-40 latitude area in the `not top shipped group` as compared to the `top shipped group` of vehicles
-    - More deliveries happen in the 37.5-40 latitude area in the `not top shipped group` as compared to the `top shipped group` of vehicles
+- The high density of price range is from 4.4816890703380645 to 148.4131591025766 dollars
+- The high density distance range is from 13.463738035001692 to 403.4287934927351 miles
+- The mean distance of vehicles not in the top five of shipped vehicle types is 281.31058244911173 miles
+- The mean distance of vehicles not in the top five of shipped vehicle types is 198.11402065754618 miles
+    - These are statistically significantly different based on a t-test
+- More pickups happen in the 35-40 latitude area in the `not top shipped group` as compared to the `top shipped group` of vehicles
+- More deliveries happen in the 37.5-40 latitude area in the `not top shipped group` as compared to the `top shipped group` of vehicles
 
