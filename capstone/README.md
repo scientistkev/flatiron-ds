@@ -129,7 +129,27 @@ The following methods and materials were used in this project, including a brief
 
 ![pickup latitude](images/pickup_latitude.png) ![delivery latitude](images/delivery_latitude.png)
 
-For more visualizations, please see the `notebook` directory
+For more visualizations, please see the `notebook` directory.
+
+The rest of the repo is dedicated to the API. The API is built and accessed via a staging URL. If you put in a request dictionary like:
+
+```json
+{
+	"pickup_latitude": 36.130518,
+	"pickup_longitude": -115.085227,
+	"delivery_latitude": 41.845691,
+	"delivery_longitude": -87.678616,
+	"vehicle_year": 2015,
+	"vehicle_type": "sedan",
+	"is_inoperable": true
+}
+```
+
+---
+
+## Conclusions and Business Recommendations
+
+
 
 
 
