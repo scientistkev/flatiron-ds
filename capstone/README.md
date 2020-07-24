@@ -52,7 +52,6 @@ The following methods and materials were used in this project, including a brief
 
 - The dependencies for these two sections are:
    
-    
     > import pandas as pd # For data manipulation <br>
     > import numpy as np # For statistics, file compression <br>
     > import missingno as msno # For visualization of data completeness <br>
@@ -81,32 +80,31 @@ The following methods and materials were used in this project, including a brief
 
 - The dependencies for the API are:
 
-    > boto3==1.14.20
-    > botocore==1.17.20
-    > click==7.1.2
-    > dataclasses==0.6; python_version < "3.7"
-    > docutils==0.15.2
-    > fastapi==0.59.0
-    geographiclib==1.50
-    geopy==2.0.0
-    h11==0.9.0
-    httptools==0.1.1; sys_platform != "win32" and sys_platform != "cygwin" and platform_python_implementation != "PyPy" 
-    jmespath==0.10.0
-    joblib==0.16.0
-    numpy==1.19.0 
-    pandas==1.0.5
-    pydantic==1.6
-    python-dateutil==2.8.1
-    python-dotenv==0.14.0
-    pytz==2020.1
-    s3transfer==0.3.3
-    scikit-learn==0.23.1
-    scipy==1.5.1
-    six==1.15.0
-    starlette==0.13.4
-    threadpoolctl==2.1.0
-    urllib3==1.25.9; python_version != "3.4"
-    uvicorn==0.11.5
-    uvloop==0.14.0; sys_platform != "win32" and sys_platform != "cygwin" and platform_python_implementation != "PyPy"
-    websockets==8.1
-</code>
+    > boto3==1.14.20 <br>
+    > botocore==1.17.20 <br>
+    > click==7.1.2 <br>
+    > dataclasses==0.6; python_version < "3.7" <br>
+    > docutils==0.15.2 <br>
+    > fastapi==0.59.0 <br>
+    > geographiclib==1.50 <br>
+    > geopy==2.0.0 <br>
+    > h11==0.9.0 <br>
+    > httptools==0.1.1; sys_platform != "win32" and sys_platform != "cygwin" and platform_python_implementation != "PyPy" <br>
+    > jmespath==0.10.0 <br>
+    > joblib==0.16.0 <br>
+    > numpy==1.19.0 <br>
+    > pandas==1.0.5 <br>
+    > pydantic==1.6 <br>
+    > python-dateutil==2.8.1 <br>
+    > python-dotenv==0.14.0 <br>
+    > pytz==2020.1 <br>
+    > s3transfer==0.3.3 <br>
+    > scikit-learn==0.23.1 <br>
+    > scipy==1.5.1 <br>
+    > six==1.15.0 <br> 
+    > starlette==0.13.4 <br>
+    > threadpoolctl==2.1.0 <br> 
+    > urllib3==1.25.9; python_version != "3.4" <br>
+    > uvicorn==0.11.5 <br>
+    > uvloop==0.14.0; sys_platform != "win32" and sys_platform != "cygwin" and platform_python_implementation != "PyPy" <br>
+    > websockets==8.1 <br>
