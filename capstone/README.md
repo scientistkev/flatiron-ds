@@ -187,7 +187,7 @@ From our preceding work, we have found that the pre-selection of features really
 2. Going back to the the top shipped vehicles, most are picked up or dropped off in the 35-40th parallel (on average), thus Kansas City shipping companies can also augment their markets to look for vehicles shipped to and from Kansas and Nebraska. 
 3. The RF Regressor model is currently the best model to put into production to figure out trip price for all vehicle types, but there is worry that it might be underfit.
 
-[error reporting for model](images/model_scatter_error.png)
+![error reporting for model](images/model_scatter_error.png)
 
 The future of this work includes the following bullet points:
 - Work towards a better model to put into production on the API. Previously I have tried to do clustering on the types of trips that may exist in the data, but with no luck, so I will look at other ensemble models to test. One that seems particularly interesting, if I can get the computer power to work is [mlxtend's StackingRegressor](https://rasbt.github.io/mlxtend/user_guide/regressor/StackingRegressor/).
