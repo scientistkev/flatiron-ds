@@ -53,41 +53,40 @@ The following methods and materials were used in this project, including a brief
 - The dependencies for these two sections are:
    
     
-    > import pandas as pd # For data manipulation 
+    > import pandas as pd # For data manipulation <br>
     > import numpy as np # For statistics, file compression <br>
     > import missingno as msno # For visualization of data completeness <br>
     > import matplotlib.pyplot as plt <br>
-    import seaborn as sns <br>
-    from geopy import distance <br>
-    from sklearn.preprocessing import StandardScaler <br>
-    from sklearn.cluster import KMeans <br>
-    from sklearn.manifold import TSNE <br>
-    from sklearn.metrics import silhouette_score <br>
-    from yellowbrick.cluster import KElbowVisualizer <br>
-    from sklearn.model_selection import cross_val_score, GridSearchCV <br>
-    from sklearn.ensemble import RandomForestRegressor <br>
-    from sklearn.preprocessing import MinMaxScaler <br>
-    from sklearn.model_selection import train_test_split <br>
-    from sklearn.metrics import mean_absolute_error <br>
-    from sklearn.metrics import mean_squared_error <br>
-    import scipy.stats as stats <br>
-    from sklearn.preprocessing import LabelEncoder <br>
-    from sklearn.linear_model import LinearRegression <br>
-    from sklearn.linear_model import Ridge <br>
-    from sklearn.metrics import mean_squared_error <br>
-    import pickle <br>
-    ----
+    > import seaborn as sns <br>
+    > from geopy import distance <br>
+    > from sklearn.preprocessing import StandardScaler <br>
+    > from sklearn.cluster import KMeans <br>
+    > from sklearn.manifold import TSNE <br>
+    > from sklearn.metrics import silhouette_score <br>
+    > from yellowbrick.cluster import KElbowVisualizer <br>
+    > from sklearn.model_selection import cross_val_score, GridSearchCV <br>
+    > from sklearn.ensemble import RandomForestRegressor <br>
+    > from sklearn.preprocessing import MinMaxScaler <br>
+    > from sklearn.model_selection import train_test_split <br>
+    > from sklearn.metrics import mean_absolute_error <br>
+    > from sklearn.metrics import mean_squared_error <br>
+    > import scipy.stats as stats <br>
+    > from sklearn.preprocessing import LabelEncoder <br>
+    > from sklearn.linear_model import LinearRegression <br>
+    > from sklearn.linear_model import Ridge <br>
+    > from sklearn.metrics import mean_squared_error <br>
+    > import pickle <br>
 
 - For the *MLOps and productionization of the model* I used [FastAPI](https://fastapi.tiangolo.com/) for local deployment to test originally. I then switched to [Cortex](cortex.dev). Cortex utilizes AWS, so I have made various config files and `.env` files that hold my company's credentials to sign on to AWS and access things like S3.
 
 - The dependencies for the API are:
-<code>
-    boto3==1.14.20
-    botocore==1.17.20
-    click==7.1.2
-    dataclasses==0.6; python_version < "3.7"
-    docutils==0.15.2
-    fastapi==0.59.0
+
+    > boto3==1.14.20
+    > botocore==1.17.20
+    > click==7.1.2
+    > dataclasses==0.6; python_version < "3.7"
+    > docutils==0.15.2
+    > fastapi==0.59.0
     geographiclib==1.50
     geopy==2.0.0
     h11==0.9.0
