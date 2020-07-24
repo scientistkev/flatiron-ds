@@ -43,6 +43,7 @@ The following methods and materials were used in this project, including a brief
 - For *the data science* I used the *OSEMN Method* and it is outlined in the notebook accordingly
 - For the *machine learning* I used the `sklearn` library and specifically the `RandomForestRegressor`, `LinearRegression`, and `RidgeRegressor` submodules
 - The dependencies for these two sections are:
+<code>
     import pandas as pd # For data manipulation
     import numpy as np # For statistics, file compression
     import missingno as msno # For visualization of data completeness
@@ -66,8 +67,10 @@ The following methods and materials were used in this project, including a brief
     from sklearn.linear_model import Ridge
     from sklearn.metrics import mean_squared_error
     import pickle
+</code>
 - For the *MLOps and productionization of the model* I used [FastAPI](https://fastapi.tiangolo.com/) for local deployment to test originally. I then switched to [Cortex](cortex.dev). Cortex utilizes AWS, so I have made various config files and `.env` files that hold my company's credentials to sign on to AWS and access things like S3.
 - The dependencies for the API are:
+<code>
     boto3==1.14.20
     botocore==1.17.20
     click==7.1.2
@@ -96,3 +99,4 @@ The following methods and materials were used in this project, including a brief
     uvicorn==0.11.5
     uvloop==0.14.0; sys_platform != "win32" and sys_platform != "cygwin" and platform_python_implementation != "PyPy"
     websockets==8.1
+</code>
